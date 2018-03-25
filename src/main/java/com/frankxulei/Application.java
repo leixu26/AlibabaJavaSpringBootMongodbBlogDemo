@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @ClassName: Application  
  * @Description: Java Spring Data实战阿里云Mongodb 
  * @author: Frank Xu Lei 
- * @Date : 2018-3-26 
+ * @Date : 2018-5-26 
 */
 @SpringBootApplication
 public class Application implements CommandLineRunner {
