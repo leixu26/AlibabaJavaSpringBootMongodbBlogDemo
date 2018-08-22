@@ -17,27 +17,28 @@ import com.frankxulei.repository.UsersRepository;
 @SpringBootApplication
 public class Application implements CommandLineRunner {
 
-	/**
-	 * Spring 自动装配 
-	 */
 	@Autowired
 	private UsersRepository repository;
-	/**
-	 * 主函数 执行入口
-	 */
+
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
 
 	@Override
 	public void run(String... args) throws Exception {
+		//System.out.println("---------------delete all----------------");
 		//repository.deleteAll();
-		// fetch all users
-		System.out.println("查找所有用户");
-		System.out.println("-------------------------------");
-		for (User user2 : repository.findAll()) {
-			System.out.println(user2.getName());
+//		System.out.println("---------------add new----------------");
+//		for (int i = 0; i < 10; i++) {
+//			User user = new User();
+//			user.setName("阿里云Mongodb"+i);
+//			user.setPassword(String.valueOf(i));
+//			user.setEmail("frankxulei@aliyun.com");
+//			repository.save(user);
+//		}
+		System.out.println("---------------get all----------------");
+		for (User user : repository.findAll()) {
+			System.out.println(user.getName());
 		}
-		 
 	}
 }
