@@ -10,9 +10,10 @@ import com.frankxulei.repository.UsersRepository;
 /**
  * @Package: com.frankxulei 
  * @ClassName: Application  
- * @Description: Java Spring Data实战阿里云Mongodb 
+ * @Description: Java Spring Data实战阿里云Mongodb参考代码
+ * 《阿里巴巴MongoDB高级实战课程》由徐雷 与阿里巴巴资深专家P9叶翔主讲！http://a.aliyun.com/f1.1BAOs
  * @author: Frank Xu Lei 
- * @Date : 2018-5-4
+ * @Date : 2018-8-18
 */
 @SpringBootApplication
 public class Application implements CommandLineRunner {
